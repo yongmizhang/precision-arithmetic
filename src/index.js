@@ -6,10 +6,13 @@ function strip(num, precision = 12) {
 function digitLength(num) {
 	let eSplit = num.toString().split(/[eE]/),
 		len = (eSplit[0].split('.')[1] || '').length - (+ (eSplit[1] || 0));
-	return len;
+	return len > 0 ? len : 0;
 }
 // 小数转整数
 function float2Int(num) {
+	if(num.toString().indexOf('e') === -1) {
+		return parseInt(num.toString().replace('.', ''))
+	}
 	let dLen = digitLength(num);
 	return strip(num * Math.pow(10, dLen));
 }

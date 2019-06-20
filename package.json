@@ -1,0 +1,32 @@
+{
+  "name": "precision-arithmetic",
+  "version": "1.0.0",
+  "description": "a basic precision arithmetic module for javascript",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangxiaome/precision-arithmetic.git"
+  },
+  "keywords": [
+    "precision",
+    "arithemic"
+  ],
+  "author": "xiuwen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangxiaome/precision-arithmetic/issues"
+  },
+  "homepage": "https://github.com/zhangxiaome/precision-arithmetic#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "jest": "^24.8.0",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4"
+  }
+}
